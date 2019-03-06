@@ -1,4 +1,3 @@
-
 /* 
 Cuatrimestre: 2019-1
 grupo: 901
@@ -17,7 +16,7 @@ import static java.util.Collections.emptyList;
 
 class Contratista{
    String nombre;
-   Rol nombreRol;
+   Rol rol;
   
  Contratista(String nombre) {
    this.nombre = nombre;
@@ -45,7 +44,7 @@ public class RolContratista {
      Contratista contra1 = new Contratista(args[0]);
      Contratista contra2 = new Contratista(args[1]);
      Contratista contra3 = new Contratista(args[2]);
-     Rol rol1 = new Rol("Plomero");
+     Rol rol1 = new Rol("electricista");
      rol1.contratistas = asList(contra1,contra2,contra3);
      Rol rol2 = new Rol("Carpintero");
      Contratista contra4 = new Contratista(args[3]);
@@ -54,9 +53,13 @@ public class RolContratista {
      final Contratista pedro = new Contratista(args[5]);
      final Rol electricista = new Rol("electricista");
      final Rol albanil = new Rol("albanil");
-     final Rol fontanero = new Rol("fontanero");
-     luis.nombreRol = electricista;
-     pedro.nombreRol = albanil;
-
+     final Rol carpintero = new Rol("Carpintero");
+     luis.rol = electricista;
+     pedro.rol = albanil;
+     contra1.rol = electricista;
+     contra2.rol = electricista;
+     contra3.rol = electricista;
+     contra4.rol = carpintero;
+    
    }
 }
