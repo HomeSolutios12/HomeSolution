@@ -1,0 +1,65 @@
+/* 
+Cuatrimestre: 2019-1
+grupo: 901
+nombre del equipo: Nova
+integrantes del equipo:
+Bruno Santiago Celestino
+Lara Juarez Jose Brandon
+Pérez Hernández Ana Jazmín
+Tíare Sánchez Medina
+Suárez Escamilla Martin idelfonso
+ */
+
+import java.util.List;
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
+
+class Contratista{
+   String nombre;
+   Rol rol;
+  
+ Contratista(String nombre) {
+   this.nombre = nombre;
+ }
+   
+
+}
+
+class Rol{
+   
+  String nombre;
+  
+  List<Contratista> contratistas;
+   
+ 
+   Rol(String nombre) {
+   this.nombre = nombre;
+
+ }
+}
+
+public class RolContratista {
+   public static void main(String[] args) {
+      
+     Contratista contra1 = new Contratista(args[0]);
+     Contratista contra2 = new Contratista(args[1]);
+     Contratista contra3 = new Contratista(args[2]);
+     Rol rol1 = new Rol("electricista");
+     rol1.contratistas = asList(contra1,contra2,contra3);
+     Rol rol2 = new Rol("Carpintero");
+     Contratista contra4 = new Contratista(args[3]);
+     rol2.contratistas = asList(contra4);
+     final Contratista luis = new Contratista(args[4]);
+     final Contratista pedro = new Contratista(args[5]);
+     final Rol electricista = new Rol("electricista");
+     final Rol albanil = new Rol("albanil");
+     final Rol carpintero = new Rol("Carpintero");
+     luis.rol = electricista;
+     pedro.rol = albanil;
+     contra1.rol = electricista;
+     contra2.rol = electricista;
+     contra3.rol = electricista;
+     contra4.rol = carpintero;
+    
+   }
+}
