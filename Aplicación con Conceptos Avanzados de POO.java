@@ -46,8 +46,8 @@ class AyudanteEspecializado extends Carpintero {
 
 public class Polim {
  public static void main(String[] args) {
-   final AyudanteEspecializado especializado = new  AyudanteEspecializado("pedro");
-   final AyudanteGeneral general = new  AyudanteGeneral("juan");
+   final AyudanteEspecializado especializado = new  AyudanteEspecializado(args [0]);
+   final AyudanteGeneral general = new  AyudanteGeneral(args [1]);
    final Servicio[] serv = new  Servicio[]{
      new Plomero(),
      especializado,
@@ -64,4 +64,3 @@ public class Polim {
    }
  }
 }
-
