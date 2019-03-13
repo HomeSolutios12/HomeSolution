@@ -1,12 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Arturito
+/* 
+Cuatrimestre: 2019-1
+grupo: 901
+nombre del equipo: Nova
+integrantes del equipo:
+Bruno Santiago Celestino
+Lara Juarez Jose Brandon
+Pérez Hernández Ana Jazmín
+Tíare Sánchez Medina
+Suárez Escamilla Martin idelfonso
  */
 class Roles{
     private String nombre;
