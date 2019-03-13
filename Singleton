@@ -9,6 +9,9 @@ Pérez Hernández Ana Jazmín
 Tíare Sánchez Medina
 Suárez Escamilla Martin idelfonso
  */
+
+// java Singleton Plomero arregla tuberias
+
 class Roles{
     private String nombre;
     private static Roles rRoles;
@@ -39,7 +42,7 @@ class Roles{
 
 public class Singleton {
     public static void main(String[] args) {
-     Roles p = Roles.getSingletonRoles("Plomero Arregla Tuberias");
+     Roles p = Roles.getSingletonRoles(args[0]+" "+args[1]+" "+args[2]);
      Roles c = Roles.getSingletonRoles("Carpintero Barniza Muebles");
      
      System.out.println(p.getNombre());
