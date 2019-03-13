@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Arturito
+ */
+interface Contratista {
+ String herramienta();
+}
+
+class Albanil implements Contratista {
+ @Override
+ public String herramienta() {
+   return "Pala";
+ }
+}
+
+class Electricista implements Contratista {
+ @Override
+ public String herramienta() {
+   return "Taladro";
+ }
+}
+
+public class Factory {
+   public static void muestra(Class<? extends Contratista> tipo) throws Exception{
+   final Contratista c = tipo.newInstance();
+   System.out.println(c.herramienta());
+ }
+ public static void main(String[] a) throws Exception {
+   muestra(Albanil.class);
+   muestra(Electricista.class);
+ }
+
+    
+}
